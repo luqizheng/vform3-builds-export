@@ -38,7 +38,7 @@ const onSubmit = () => {
   data.secretKey = cbcEncryptDes(secretKey, data.userName);
 
   memberOption.request
-    .post(memberOption.path + "/account/login", data)
+    .post(memberOption.path + "account/login", data)
     .then((resp: any) => {
       window.localStorage.setItem("token", "Coder " + resp.data.token);
       window.localStorage.setItem("userName", resp.data.user.userName);
