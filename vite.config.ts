@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     createSvgIconsPlugin({
       // Specify the icon folder to be cached
-      iconDirs: [resolve(process.cwd(), 'src/icons/svg')],
+      iconDirs: [resolve(process.cwd(), 'lib/icons/svg')],
       // Specify symbolId format
       symbolId: 'icon-[dir]-[name]',
     })],
@@ -21,7 +21,7 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   optimizeDeps: {
-    include: ['./extendLib/vuedraggable/dist/vuedraggable.umd.js', 'quill']
+    include: ['@/../extendLib/vuedraggable/dist/vuedraggable.umd.js', 'quill']
   },
 
   css: {
