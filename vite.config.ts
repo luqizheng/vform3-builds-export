@@ -1,18 +1,55 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from "path";
+import commonjs from '@rollup/plugin-commonjs'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import path, { resolve } from "path";
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    createSvgIconsPlugin({
+      // Specify the icon folder to be cached
+      iconDirs: [resolve(process.cwd(), 'src/icons/svg')],
+      // Specify symbolId format
+      symbolId: 'icon-[dir]-[name]',
+    })],
   resolve: {
-    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
+    alias: {
+      "@": resolve(__dirname, 'lib'), // 路径别名
+    },
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
+  },
+  optimizeDeps: {
+    include: ['./extendLib/vuedraggable/dist/vuedraggable.umd.js', 'quill']
+  },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        /* 自动引入全局scss文件 */
+        additionalData: '@import "./lib/styles/global.scss";'
+      }
+    }
   },
   build: {
+    //minify: false,
+    commonjsOptions: {
+      exclude: [
+        'extendLib/vuedraggable/dist/vuedraggable.umd.js,',  //引号前的逗号不能删，不知何故？？
+        './extendLib/vuedraggable/dist/vuedraggable.umd.js',  //引号前的逗号不能删，不知何故？？
+        //'vue/dist/*.js'
+      ],
+      include: []
+      //requireReturnsDefault: true
+    },
+
     lib: {
       entry: path.resolve(__dirname, "lib/index"),
       name: "coder-notification-client",
       fileName: (format) => `index.${format}.js`,
     },
+
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: [
