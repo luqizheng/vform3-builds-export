@@ -8,6 +8,11 @@ import path, { resolve } from "path";
 export default defineConfig({
   plugins: [
     vue(),
+    commonjs(
+      {
+        requireReturnsDefault: true,
+        include:["node_modules/**"]
+      }),
     createSvgIconsPlugin({
       // Specify the icon folder to be cached
       iconDirs: [resolve(process.cwd(), 'lib/icons/svg')],
@@ -21,7 +26,7 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   optimizeDeps: {
-    include: ['@/../extendLib/vuedraggable/dist/vuedraggable.umd.js', 'quill']
+    include: ['@/../extendLib/vuedraggable/dist/vuedraggable.umd.js','quill']
   },
 
   css: {
@@ -46,7 +51,7 @@ export default defineConfig({
 
     lib: {
       entry: path.resolve(__dirname, "lib/index"),
-      name: "coder-notification-client",
+      name: "coder-vform3",
       fileName: (format) => `index.${format}.js`,
     },
 

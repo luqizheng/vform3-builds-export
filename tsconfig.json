@@ -6,6 +6,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "strict": true,
+    "allowJs": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -21,11 +22,7 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
-    "lib/**/*.ts",
-    "lib/**/*.d.ts",
-    "lib/**/*.tsx",
-    "lib/**/*.vue"
+    "src/**/*.vue"
   ],
   "references": [
     {
