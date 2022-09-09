@@ -27,6 +27,7 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   optimizeDeps: {
+    
     include: ['@/../extendLib/dist/vuedraggable.umd.js','quill']
   },
 

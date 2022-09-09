@@ -18,6 +18,6 @@ const app = createApp(App).
     .use(CoderMember, { path: 'http://192.168.2.5:8080/api/member', request: axios })
     .use(ElementPlus)
     .use(router);
-app.component('draggable', Draggable)
+//app.component('draggable', Draggable)
 app.mount("#app");
 
