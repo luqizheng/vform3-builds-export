@@ -26,7 +26,7 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   optimizeDeps: {
-    include: ['@/../extendLib/vuedraggable/dist/vuedraggable.umd.js','quill']
+    include: ['@/../extendLib/dist/vuedraggable.umd.js','quill']
   },
 
   css: {
@@ -38,16 +38,17 @@ export default defineConfig({
     }
   },
   build: {
-    //minify: false,
-    commonjsOptions: {
-      exclude: [
-        'extendLib/vuedraggable/dist/vuedraggable.umd.js,',  //引号前的逗号不能删，不知何故？？
-        './extendLib/vuedraggable/dist/vuedraggable.umd.js',  //引号前的逗号不能删，不知何故？？
-        //'vue/dist/*.js'
-      ],
-      include: []
-      //requireReturnsDefault: true
-    },
+    // //minify: false,
+    // commonjsOptions: {
+    //   exclude: [
+    //     "vuedraggable",
+    //     'extendLib/dist/vuedraggable.umd.js,',  //引号前的逗号不能删，不知何故？？
+    //     './extendLib/dist/vuedraggable.umd.js',  //引号前的逗号不能删，不知何故？？
+    //     //'vue/dist/*.js'
+    //   ],
+    //   include: []
+    //   //requireReturnsDefault: true
+    // },
 
     lib: {
       entry: path.resolve(__dirname, "lib/index"),
@@ -66,7 +67,8 @@ export default defineConfig({
         "element-plus",
         "vue3-text-clamp",
         "crypto-js", "vue-router",
-        "axios"
+        "axios","vuenextdraggable","vuedraggable",
+        "coder-vuedraggable","vuedraggable-es","zhyswan-vuedraggable"
 
       ],
       output: {
