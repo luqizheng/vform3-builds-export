@@ -3,11 +3,12 @@ import vue from '@vitejs/plugin-vue'
 import commonjs from '@rollup/plugin-commonjs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import path, { resolve } from "path";
-
+import vueJsx from '@vitejs/plugin-vue-jsx'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    vueJsx({}),
     commonjs(
       {
         requireReturnsDefault: true,
