@@ -1075,13 +1075,6 @@ coder-member-components-vue3@^3.8.0:
     vue "^3.2.25"
     vue-clipboard3 "^1.0.1"
 
-coder-vuedraggable@4.1.1:
-  version "4.1.1"
-  resolved "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/coder-vuedraggable/-/coder-vuedraggable-4.1.1/dd646a8d97582a14cf63a7f4cef6a4e6bd16ebe6.tgz#dd646a8d97582a14cf63a7f4cef6a4e6bd16ebe6"
-  integrity sha512-6+XS0Ovtptd8b/r188bYGMNR6hN6wVt+C8mKZmbnsxKdB6LtiTgJLssiZ9wJhGRpsEikoyu8r9vKViDaUuOwLw==
-  dependencies:
-    sortablejs "1.14.0"
-
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/collection-visit/-/collection-visit-1.0.0/4bc0373c164bc3291b4d368c829cf1a80a59dca0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
@@ -3037,13 +3030,6 @@ vuedraggable-es@^4.1.1:
   version "4.1.1"
   resolved "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/__tarballs/vuedraggable-es/4.1.1/__path/vuedraggable-es/-/vuedraggable-es-4.1.1/9d6289adc085fa857f85100f7cf7dc5139e5a8a0.tgz#9d6289adc085fa857f85100f7cf7dc5139e5a8a0"
   integrity sha512-F35pjSwC8HS/lnaOd+B59nYR4FZmwuhWAzccK9xftRuWds8SU1TZh5myKVM86j5dFOI7S26O64Kwe7LUHnXjlA==
-  dependencies:
-    sortablejs "1.14.0"
-
-vuenextdraggable@^4.1.0:
-  version "4.1.0"
-  resolved "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/__tarballs/vuenextdraggable/4.1.0/__path/vuenextdraggable/-/vuenextdraggable-4.1.0/764ae4fe8ec98830413d8a3835425c14e276b3d8.tgz#764ae4fe8ec98830413d8a3835425c14e276b3d8"
-  integrity sha512-nZkDu4gnBKiLuERLnbnzrDGhDFsAurROpJWqR1oCaJsdi+aZ0FoLB/BCK6PCLWXIhn2yHEurSZq9dT6TakHvaQ==
   dependencies:
     sortablejs "1.14.0"
 

@@ -12,7 +12,7 @@ export default defineConfig({
     commonjs(
       {
         requireReturnsDefault: true,
-        include:["node_modules/**"]
+        include: ["node_modules/**"]
       }),
     createSvgIconsPlugin({
       // Specify the icon folder to be cached
@@ -27,8 +27,8 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   optimizeDeps: {
-    
-    include: ['@/../extendLib/dist/vuedraggable.umd.js','quill']
+
+    include: ['@/../extendLib/dist/vuedraggable.umd.js', 'quill']
   },
 
   css: {
@@ -40,6 +40,14 @@ export default defineConfig({
     }
   },
   build: {
+    terserOptions: {
+      compress: {
+        //生产环境时移除console
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+
     // //minify: false,
     // commonjsOptions: {
     //   exclude: [
@@ -69,8 +77,8 @@ export default defineConfig({
         "element-plus",
         "vue3-text-clamp",
         "crypto-js", "vue-router",
-        "axios","vuenextdraggable","vuedraggable",
-        "coder-vuedraggable","vuedraggable-es","zhyswan-vuedraggable"
+        "axios", "vuenextdraggable", "vuedraggable",
+        "coder-vuedraggable", "vuedraggable-es", "zhyswan-vuedraggable"
 
       ],
       output: {
