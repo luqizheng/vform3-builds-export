@@ -69,17 +69,24 @@ export default defineConfig({
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: [
-        "vue",
-        "dayjs",
-        "@aspnet/signalr",
+        "element-plus/dist/index.css",
+        "ant-design-vue/dist/antd.css",
+        "@element-plus/icons-vue",
+        "ace-builds",
         "ant-design-vue",
+        "axios",
         "coder-member-components-vue3",
+        "crypto-js",
         "element-plus",
-        "vue3-text-clamp",
-        "crypto-js", "vue-router",
-        "axios", "vuenextdraggable", "vuedraggable",
-        "coder-vuedraggable", "vuedraggable-es", "zhyswan-vuedraggable"
-
+        "fast-glob",
+        "file-saver",
+        "mitt",
+        "mvdir",
+        "sortablejs",
+        "vue",
+        "vue-router",
+        "vue3-quill",
+        "vuedraggable-es-coder"
       ],
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量

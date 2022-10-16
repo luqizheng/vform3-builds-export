@@ -3026,10 +3026,10 @@ vue@^3.2.13, vue@^3.2.25, vue@^3.2.37:
     "@vue/server-renderer" "3.2.38"
     "@vue/shared" "3.2.38"
 
-vuedraggable-es@^4.1.1:
-  version "4.1.1"
-  resolved "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/__tarballs/vuedraggable-es/4.1.1/__path/vuedraggable-es/-/vuedraggable-es-4.1.1/9d6289adc085fa857f85100f7cf7dc5139e5a8a0.tgz#9d6289adc085fa857f85100f7cf7dc5139e5a8a0"
-  integrity sha512-F35pjSwC8HS/lnaOd+B59nYR4FZmwuhWAzccK9xftRuWds8SU1TZh5myKVM86j5dFOI7S26O64Kwe7LUHnXjlA==
+vuedraggable-es-coder@4.1.2:
+  version "4.1.2"
+  resolved "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/vuedraggable-es-coder/-/vuedraggable-es-coder-4.1.2/c6b72d8c4c7961358d466a4f56fe326a664d5d88.tgz#c6b72d8c4c7961358d466a4f56fe326a664d5d88"
+  integrity sha512-Rdk7015Om50pWPRUGiG9mKOFByHFop5Ql73KxJ17Z5J9UFSBgfIpEYtqfAZL9UjX77gyVyqVfIi42prulY+/BA==
   dependencies:
     sortablejs "1.14.0"
 
