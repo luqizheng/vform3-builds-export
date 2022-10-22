@@ -1,7 +1,7 @@
 {
   "name": "coder-vform3",
   "private": false,
-  "version": "0.8.13",
+  "version": "0.8.14",
   "type": "module",
   "files": [
     "dist"
@@ -27,7 +27,7 @@
     "ant-design-vue": "^3.2.6",
     "axios": "^0.27.2",
     "coder-member-components-vue3": "^3.8.0",
-    "coder-vue3-quill": "0.3.1",
+    "coder-vue3-quill": "^0.3.3",
     "crypto-js": "^4.1.1",
     "element-plus": "2.0.4",
     "fast-glob": "^3.2.11",

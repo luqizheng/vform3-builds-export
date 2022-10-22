@@ -32,6 +32,7 @@
   import fieldMixin from "@/components/form-designer/form-widget/field-widget/fieldMixin";
 
   import { quillEditor } from 'coder-vue3-quill'
+  import 'coder-vue3-quill/dist/style.css'
 
   export default {
     name: "rich-editor-widget",

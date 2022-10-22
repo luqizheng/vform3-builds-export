@@ -28,7 +28,7 @@ export default defineConfig({
   },
   optimizeDeps: {
 
-    include: ['@/../extendLib/dist/vuedraggable.umd.js', 'quill']
+    include: ['quill']
   },
 
   css: {
