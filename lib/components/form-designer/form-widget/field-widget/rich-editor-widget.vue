@@ -31,7 +31,7 @@
   import {deepClone} from "@/utils/util";
   import fieldMixin from "@/components/form-designer/form-widget/field-widget/fieldMixin";
 
-  import { quillEditor } from 'vue3-quill'
+  import { quillEditor } from 'coder-vue3-quill'
 
   export default {
     name: "rich-editor-widget",

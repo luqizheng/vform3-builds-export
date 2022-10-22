@@ -86,7 +86,8 @@ export default defineConfig({
         "vue",
         "vue-router",
         "vue3-quill",
-        "vuedraggable-es-coder"
+        "vuedraggable-es-coder",
+        "coder-vue3-quill"
       ],
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
